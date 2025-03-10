@@ -3,7 +3,7 @@ layout: post
 title:  "Postmortem: Standoff!"
 date:   2024-07-24 13:10:00 -0500
 categories: blog postmortem
-banner: /assets/resources/posts/standoff/StandoffFire.gif
+banner: assets/resources/posts/standoff/StandoffFire.gif
 ---
 
 Standoff! is my first foray into the world of [Tiny Mass Games](http://www.tinymassgames). It is a card game about deceit and limited information. Attack the players to your left or right while trying to co-ordinate with others to become the last person standing. Part of my concession, was that I was actually too busy to put a lot of time into this, so I was going to be doing this pretty much on my phone. (Wait, what? Yep! [On my phone.]({% post_url 2023-10-24-i-made-a-game-on-my-phone %}))
