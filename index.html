@@ -1,0 +1,78 @@
+---
+# Feel free to add content and custom Front Matter to this file.
+# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+
+layout: default
+---
+
+<div class="content" style="display: inline;">
+	<div class="gamepad-menu">
+		<div class="nav-buttons">
+			<a href="#section-about">
+				<div class="nav-button about">
+					<span class="icon icon-default"><i class="icon-center fa fa-question"></i></span>
+					<span class="icon icon-hover">&nbsp;<i class="icon-center fa fa-info"></i></span>
+				</div>
+			</a>
+			<a href="#section-blog">
+				<div class="nav-button blog">
+					<span class="icon icon-default"><i class="icon-center fa fa-pen"></i></span>
+					<span class="icon icon-hover"><i class="icon-center fa fa-pen-to-square"></i></span>
+				</div>
+			</a>
+			<a href="#section-talks">
+				<div class="nav-button talks">
+					<span class="icon icon-default"><i class="icon-center fa fa-microphone-slash"></i></span>
+					<span class="icon icon-hover"><i class="icon-center fa fa-microphone"></i></span>
+				</div>
+			</a>
+			<a href="#section-contact">
+				<div class="nav-button contact">
+					<span class="icon icon-default"><i class="icon-center fa fa-envelope"></i></span>
+					<span class="icon icon-hover"><i class="icon-center fa fa-envelope-open"></i></span>
+				</div>
+			</a>
+		</div>
+		<div class="title">Chad++</div>
+	</div>
+</div>
+<div class="section section-alt section-about" id="section-about">
+	<h1>A little about me.</h1>
+	<p>My name is Chad Stewart. I'm an {{ 'now' | date: "%Y" | minus: 2007 }} year veteran of the game industry as software engineer. My craft of choice is programming, but I swear I'm a people person!</p>
+	<p>I first got my start at BioWare working on Star Wars: The Old Republic. After four and a half years of releasing lightsabers and blasters, I took the leap to go indie founding Binary Solo. We put out some cool original stuff like Indie Van Game Jam and Hisato no Saku. We also played a small part in bringing indies to new homes.</p> 
+	<p>After ten long years of hustling, I've settled down as a Senior Software Engineer at Skymap Games. These days you can find me doing weird little experiments with Tiny Mass Games, helping to organize with Boston Indies, or doling out terrible advice.</p>
+</div>
+<div class="section section-blog" id="section-blog">
+	<h1 class="centered">Things I've written.</h1>
+	{% if site.paginate %}
+		{% assign posts = paginator.posts %}
+	{% else %}
+		{% assign posts = site.posts %}
+	{% endif %}
+	{% if site.posts.size() > 0 %}
+	<div class="cards">
+		{% for post in site.categories.blog limit: 5 %}
+			{% assign increment = 20.0 | divided_by: forloop.length %}
+			{% assign rotation = forloop.index0 | times: increment | minus: 5.0 %}
+			{% assign position = rotation | times: rotation | times: 0.5 %}
+			{% include elements/card.html post=post rot=rotation pos=position %}
+		{% endfor %}
+	</div>
+	{% endif %}
+</div>
+<div class="section section-alt section-talks" id="section-talks">
+	<h1 class="centered">Things I've said.</h1>
+	{% if site.posts.size() > 0 %}
+		<div class="cards">
+		{% for post in site.categories.talk %}
+			{% assign rotation = forloop.index0 | times: 5.0 | minus: 5.0 %}
+			{% assign position = rotation | times: rotation | times: 0.5 %}
+			{% include elements/card.html post=post rot=rotation pos=position %}
+		{% endfor %}
+	</div>
+	{% endif %}
+</div>
+<div class="section section-contact" id="section-contact">
+	<h1>Contact</h1>
+	Find me!
+</div>

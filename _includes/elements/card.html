@@ -1,0 +1,13 @@
+<a href="{{include.post.url}}">
+  <div class="card" style="rotate: {{include.rot}}deg; margin-bottom: -{{include.pos}}px">
+    <div class="inner">
+      <div class="title">
+        {{include.post.title}}
+      </div>
+      <div class="image"><img src="{{include.post.banner}}" /></div>
+      <div class="desc">
+        {{include.post.excerpt | strip_html }}
+      </div>
+    </div>
+  </div>
+</a>

@@ -1,0 +1,10 @@
+<script>
+let end_titles = [];
+{% for item in site.end_titles %}
+	end_titles.push({{ item | newline_to_br | jsonify }});
+{% endfor %}
+
+function get_end_title() {
+	document.write(end_titles[Math.floor(Math.random()*end_titles.length)]);
+}
+</script>

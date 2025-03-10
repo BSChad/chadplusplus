@@ -1,0 +1,107 @@
+.gamepad-menu
+{
+	background: url('assets/images/gamepad-big.svg') no-repeat center;
+	background-size: contain;
+
+	height: 800px;
+	width: auto;
+
+	margin-bottom: 10rem;
+}
+
+.gamepad-menu a
+{
+	color: white;
+}
+
+.gamepad-menu .title
+{
+	font-size: 2.5rem;
+    font-weight: 900;
+
+	position: absolute;
+    left: 50%;
+    top: 505px;
+    transform: translate(-50%, -50%);
+}
+
+.nav-buttons
+{
+	color: white;
+	position: relative;
+}
+
+.nav-button
+{
+	width: 100px;
+	height: 100px;
+
+	position: absolute;
+}
+
+.nav-button .icon
+{
+	display: block;
+	width: 100px;
+	height: 100px;
+
+	transition: opacity .15s ease-in;
+
+	font-size: 2.5rem;
+}
+
+.nav-button .icon-default 
+{
+	opacity: 1.0;
+}
+
+.nav-button .icon-hover 
+{
+	opacity: 0;
+}
+
+.nav-button:hover .icon-default,
+.nav-button:focus .icon-default 
+{
+	opacity: 0;
+}
+
+.nav-button:hover .icon-hover,
+.nav-button:focus .icon-hover 
+{
+	width: 100px;
+	height: 100px;
+	opacity: 1.0;
+}
+
+.icon-center 
+{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+.nav-buttons .about
+{
+	left: 800px;
+	top: 198px;
+}
+
+.nav-buttons .blog
+{
+	left: 725px;
+    top: 290px;
+}
+
+.nav-buttons .talks
+{
+	left: 876px;
+	top: 290px;
+}
+
+.nav-buttons .contact
+{
+	left: 800px;
+	top: 380px;
+}

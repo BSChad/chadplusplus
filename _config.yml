@@ -1,0 +1,54 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+title: Chad++
+email: chad@binarysolo.com
+description: >- # this means to ignore newlines until "baseurl:"
+  My name is Chad Stewart. I make games.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://www.chadpluspl.us" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: BinarySoloChad
+github_username:  BSChad
+legal: "© Chad Stewart, all rights reserved."
+
+# Build settings
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed
+
+# Silly settings
+end_titles:
+  - "SEE YOU SPACE COWBOY ..."
+  - |
+      ARE YOU LIVING IN THE  
+      REAL WORLD?
+  - "EASY COME, EASY GO..."
+  - |
+      SEE YOU COWGIRL,
+      SOMEDAY, SOMEWHERE!
+  - "SEE YOU SPACE SAMURAI ..."
+  - "SLEEPING BEAST"
+  - "YOU'RE GONNA CARRY THAT WEIGHT."
+  - "DO YOU HAVE A COMRADE?"
+  - "LIFE IS BUT A DREAM..."
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/

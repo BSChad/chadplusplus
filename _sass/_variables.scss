@@ -1,0 +1,34 @@
+// Fonts.
+@font-face
+{
+    font-family: 'tangerine';
+    src: url(/assets/resources/tangerine.otf);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+$fontHeader: "rl aqva", sans-serif;
+$fontBody: "Open Sans", sans-serif;
+
+// Colors.
+$colorBlack: #231f20;
+$colorYellow: #e7cf76;
+$colorPink: #d52991;
+$colorBlue: #15599c;
+$colorNavy: #1c274c; 
+$colorOffWhite: #f0f0f0;
+$colorYellowish: #f7df86;
+
+// Spacing.
+$spacing: 4rem;
+$spacingHalf: 2rem;
+$spacingQuarter: 1rem;
+
+
+@mixin mobile
+{
+    @media screen and (max-width: 1152px)
+    {
+        @content;
+    }
+}

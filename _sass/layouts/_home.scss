@@ -1,0 +1,41 @@
+.container-home
+{
+    width: 100%;
+
+    background-color: $colorYellow;
+
+    @include mobile
+    {
+        width: 100%;
+    }
+}
+
+.cards
+{
+    display: flex;
+    align-items: flex-end;
+
+    height: 400px;
+    margin-bottom: 100px;
+}
+
+.section
+{
+    padding: 2rem 10rem;
+}
+
+.section h1
+{
+    margin-bottom: 3rem;
+}
+
+.section h1.centered
+{
+    text-align: center;
+}
+
+.section-alt
+{
+    color: $colorYellow;
+    background-color: $colorBlue;
+}
