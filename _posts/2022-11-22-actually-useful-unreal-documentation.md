@@ -3,7 +3,7 @@ layout: post
 title:  "Actually Useful Unreal Documentation"
 date:   2022-11-22 14:33:03 -0500
 categories: blog tip
-banner: assets/resources/posts/unreal/OIP.jpg
+banner: /assets/resources/posts/unreal/OIP.jpg
 ---
 
 Okay, no way to dance around this one. The official documentation for Unreal Engine isn't all that useful. If it's not just auto-generated from heaps of engine code, there is some really wrong. Rarely, if ever does the Unreal Documentation provide much help besides telling you which file to include in order to make a type compile. (And honestly, if you're not getting that for free from Rider or Visual Studio, you need to upgrade.) If you have a question about the return type? Go dig through the function in the engine code. Wondering if you can safely put nullptr as an argument? Give it the old college try and see if it crashes.
