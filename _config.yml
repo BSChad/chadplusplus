@@ -14,7 +14,7 @@ email: chad@binarysolo.com
 description: >- # this means to ignore newlines until "baseurl:"
   My name is Chad Stewart. I make games.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://www.chadpluspl.us" # the base hostname & protocol for your site, e.g. http://example.com
+url: "http://bschad.github.io/chadplusplus" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: BinarySoloChad
 github_username:  BSChad
 legal: "© Chad Stewart, all rights reserved."
