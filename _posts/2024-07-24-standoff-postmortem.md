@@ -6,7 +6,7 @@ categories: blog postmortem
 banner: assets/resources/posts/standoff/StandoffFire.gif
 ---
 
-Standoff! is my first foray into the world of [Tiny Mass Games](http://www.tinymassgames). It is a card game about deceit and limited information. Attack the players to your left or right while trying to co-ordinate with others to become the last person standing. Part of my concession, was that I was actually too busy to put a lot of time into this, so I was going to be doing this pretty much on my phone. (Wait, what? Yep! [On my phone.]({% post_url 2023-10-24-i-made-a-game-on-my-phone %}))
+Standoff! is my first foray into the world of [Tiny Mass Games](http://www.tinymassgames). It is a card game about deceit and limited information. Attack the players to your left or right while trying to co-ordinate with others to become the last person standing. Part of my concession, was that I was actually too busy to put a lot of time into this, so I was going to be doing this pretty much on my phone. (Wait, what? Yep! [On my phone.]({{site.baseurl}}{% post_url 2023-10-24-i-made-a-game-on-my-phone %}))
 
 [You can play the game on itch.](https://binarysolo.itch.io/standoff)
 
@@ -19,7 +19,7 @@ Pretty much everything! I say pretty much because the only parts I didn't do wer
 * Particles and lighting directly in-editor in Godot!
   * (I actually like how this fire came out!)
     
-    ![Chunky spherical fire particles float up like little flames in a low-poly campfire.](/assets/resources/posts/standoff/FireParticles.gif)
+    ![Chunky spherical fire particles float up like little flames in a low-poly campfire.]({{ "/assets/resources/posts/standoff/FireParticles.gif" | relative_url }})
 * I wrote all the code in GDScript. That includes:
   * A card-based, ability system.
   * Game logic.
@@ -35,7 +35,7 @@ Well, turns out the FMOD GDExtension didn't work out because... Android doesn't 
 
 *Lastly,* I generated all my builds on a computer. (Godot calls this Exporting.) The Android editor doesn't have the capability to run the Export commands. That doesn't sound unreasonable, as generating binaries requires quite a bit of platform-specific code. Save for mobile, it seems best to actually export from the desired platform.
 
-![The characters do the whole Good, Bad, and the Ugly close-up eye shot thing.](/assets/resources/posts/standoff/CinematicIntro.gif)
+![The characters do the whole Good, Bad, and the Ugly close-up eye shot thing.]({{ "/assets/resources/posts/standoff/CinematicIntro.gif" | relative_url }})
 
 ## What I Learned
 1. ### How to use the Godot editor!
@@ -55,14 +55,14 @@ The game didn't require a plethora of features in order to get working. Deal car
 1. ### Legibility!
     I used UI to do a lot of the card and button work, but that bit me a little bit when I wanted to implement animations and effects to make the game clearer to understand. I ran out of time for multiple reasons, but in the end I just have cards flying to the left or right of the screen when it would have been much clearer to create a 3D instance that flies to the actual player.
 
-    ![Player chooses whether cards are given to the player on the left or right.](/assets/resources/posts/standoff/DealCards.gif)
+    ![Player chooses whether cards are given to the player on the left or right.]({{ "/assets/resources/posts/standoff/DealCards.gif" | relative_url }})
 
     I was also stubborn and stuck on this over the shoulder view, so getting the camera angles good for all players took a lot of time. Time that would have been better used if I had just done a top down view to start and been willing to show the flow of the cards more easily that way. I'm happy with the cinematic quality it has, but it was slightly at the cost of clarity.
 
 2. ### Stick To a Theme
     This one was just a mismatch between what I had in my head and what I had on my computer. When I started developing the idea I was intent on a wacky mashup of wizards, knights, guns, and others. I drew all of the card art on my phone during the intermission of Disney on Ice. I avoided guns because I thought of swords and shields when I made the deck of cards prototype.
     
-    ![Players use cards to attack each other, although animations are sync'd up to the UI, it's still cowboys using cards with goofy swords on them.](/assets/resources/posts/standoff/CowboysUsingSwords.gif)
+    ![Players use cards to attack each other, although animations are sync'd up to the UI, it's still cowboys using cards with goofy swords on them.]({{ "/assets/resources/posts/standoff/CowboysUsingSwords.gif" | relative_url }})
 
     The first pack I had on my machine was an old Synty Western pack. Then I got a fun idea to use the 'The Good, The Bad, and the Ugly' shots of the eyes to start each game to sell that distrust element. From there, I felt like I really went full on Serious Western with the vibe while UI has this sketchy fun feel to it. I should have either added more over-the-top models, injected some humor, or just re-did the cards to be a gunslingin' theme instead.
 
