@@ -36,36 +36,36 @@ layout: default
 		<div class="title">Chad++</div>
 	</div>
 </div>
-<div class="section section-alt section-about" id="section-about">
-	<h1>A little about me.</h1>
+<div class="section section-alt left-to-right section-about" id="section-about">
+	<h1>A little about <span>me.</span></h1>
 	<p>My name is Chad Stewart. I'm an {{ 'now' | date: "%Y" | minus: 2007 }} year veteran of the game industry as software engineer. My craft of choice is programming, but I swear I'm a people person!</p>
 	<p>I first got my start at BioWare working on Star Wars: The Old Republic. After four and a half years of releasing lightsabers and blasters, I took the leap to go indie founding Binary Solo. We put out some cool original stuff like Indie Van Game Jam and Hisato no Saku. We also played a small part in bringing indies to new homes.</p> 
 	<p>After ten long years of hustling, I've settled down as a Senior Software Engineer at Skymap Games. These days you can find me doing weird little experiments with Tiny Mass Games, helping to organize with Boston Indies, or doling out terrible advice.</p>
 </div>
 <div class="section section-blog" id="section-blog">
-	<h1 class="centered">Things I've written.</h1>
+	<h1>Things I've <span>written.</span></h1>
 	{% if site.paginate %}
 		{% assign posts = paginator.posts %}
 	{% else %}
 		{% assign posts = site.posts %}
 	{% endif %}
 	{% if site.posts.size() > 0 %}
-	<div class="cards">
+	<div class="cards centered">
 		{% for post in site.categories.blog limit: 5 %}
-			{% assign increment = 20.0 | divided_by: forloop.length %}
-			{% assign rotation = forloop.index0 | times: increment | minus: 5.0 %}
+			{% assign increment = 10.0 | divided_by: forloop.length %}
+			{% assign rotation = forloop.index0 | times: increment | minus: 2.0 %}
 			{% assign position = rotation | times: rotation | times: 0.5 %}
 			{% include elements/card.html post=post rot=rotation pos=position %}
 		{% endfor %}
 	</div>
 	{% endif %}
 </div>
-<div class="section section-alt section-talks" id="section-talks">
-	<h1 class="centered">Things I've said.</h1>
+<div class="section section-alt left-to-right section-talks" id="section-talks">
+	<h1>Things I've <span>said.</span></h1>
 	{% if site.posts.size() > 0 %}
-		<div class="cards">
+		<div class="cards centered">
 		{% for post in site.categories.talk %}
-			{% assign rotation = forloop.index0 | times: 5.0 | minus: 5.0 %}
+			{% assign rotation = forloop.index0 | times: 2.0 | minus: 2.0 %}
 			{% assign position = rotation | times: rotation | times: 0.5 %}
 			{% include elements/card.html post=post rot=rotation pos=position %}
 		{% endfor %}
@@ -73,6 +73,6 @@ layout: default
 	{% endif %}
 </div>
 <div class="section section-contact" id="section-contact">
-	<h1>Contact</h1>
+	<h1><span>Contact</span></h1>
 	Find me!
 </div>

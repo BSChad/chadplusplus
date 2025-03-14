@@ -5,8 +5,10 @@
         {{include.post.title}}
       </div>
       <div class="image"><img src="{{include.post.banner}}" /></div>
+      <div class="detail">{{include.post.categories[1] | capitalize}}</div>
+      <div class="icon"><img src="" /></div>
       <div class="desc">
-        {{include.post.excerpt | strip_html }}
+        {{include.post.excerpt | strip_html | truncatewords: 20, '' }}
       </div>
     </div>
   </div>

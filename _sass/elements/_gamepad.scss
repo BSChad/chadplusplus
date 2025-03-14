@@ -8,6 +8,12 @@
 
 	margin: auto;
 	margin-bottom: 10rem;
+
+	@include mobile
+    {
+    	height: 400px;
+        width: 512px;
+    }
 }
 
 .gamepad-menu a
@@ -38,6 +44,12 @@
 	height: 100px;
 
 	position: absolute;
+
+	@include mobile
+	{
+		width: 40px;
+		height: 40px;
+	}
 }
 
 .nav-button .icon
@@ -49,6 +61,14 @@
 	transition: opacity .15s ease-in;
 
 	font-size: 2.5rem;
+
+	@include mobile
+	{
+		width: 40px;
+		height: 40px;
+
+		font-size: 1.5rem;
+	}
 }
 
 .nav-button .icon-default 
@@ -73,6 +93,12 @@
 	width: 100px;
 	height: 100px;
 	opacity: 1.0;
+
+	@include mobile
+	{
+		width: 40px;
+		height: 40px;
+	}
 }
 
 .icon-center 
@@ -87,22 +113,46 @@
 {
 	left: 648px;
 	top: 198px;
+
+	@include mobile
+	{
+		left: 315px;
+		top: 104px;
+	}
 }
 
 .nav-buttons .blog
 {
 	left: 572px;
     top: 290px;
+
+    @include mobile
+	{
+		left: 276px;
+		top: 149px;
+	}
 }
 
 .nav-buttons .talks
 {
 	left: 725px;
 	top: 290px;
+	
+	@include mobile
+	{
+		left: 353px;
+		top: 149px;
+	}
 }
 
 .nav-buttons .contact
 {
 	left: 648px;
 	top: 380px;
+
+	@include mobile
+	{
+		left: 315px;
+		top: 194px;
+	}
 }

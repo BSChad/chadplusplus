@@ -21,7 +21,12 @@
 
 .section
 {
-    padding: 2rem 10rem;
+    padding: 0rem 25rem;
+
+    @include mobile
+    {
+        padding: 0rem 5rem;
+    }
 }
 
 .section h1
@@ -29,13 +34,48 @@
     margin-bottom: 3rem;
 }
 
-.section h1.centered
+.section h1 span
 {
-    text-align: center;
+    display: inline;
+    background-repeat: no-repeat;
+    background-position: 0 100%;
+    background-size: 100% .4em;
+    background-image: linear-gradient(to bottom, #e7bb19 0%, #e7bb19 100%);
+}
+
+.section .cards.centered
+{
+    justify-content: center;
 }
 
 .section-alt
 {
-    color: $colorYellow;
-    background-color: $colorBlue;
+    color: white;
+
+    padding: 10rem 25rem;
+
+    @include mobile
+    {
+        padding: 25rem 5rem;
+    }
+}
+
+.section-alt.left-to-right
+{
+    background-image: linear-gradient(176deg, $colorYellow calc(20% - 2px), $colorBlue 20%, $colorBlue 75%, $colorYellow calc(75% + 2px));
+}
+
+.section-alt.right-to-left
+{
+    background-image: linear-gradient(184deg, $colorYellow calc(20% - 2px), $colorBlue 20%, $colorBlue 75%, $colorYellow calc(75% + 2px));
+}
+
+.section-alt h1 span
+{
+    background-image: linear-gradient(to bottom, $colorNavy 0%, $colorNavy 100%);
+}
+
+.section-talks
+{
+    padding-top: 15rem;
 }
