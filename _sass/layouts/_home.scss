@@ -52,7 +52,7 @@
 {
     color: white;
 
-    padding: 10rem 25rem;
+    padding: 12rem 25rem 15rem 25rem;
 
     @include mobile
     {
@@ -78,4 +78,52 @@
 .section-talks
 {
     padding-top: 15rem;
+}
+
+.contact
+{
+    display: grid;
+    grid-gap: 1rem;
+}
+
+.contact input, .contact textarea
+{
+    font-family: "Poppins", sans-serif;
+
+    line-height: 1.75rem;
+    padding-left: 10px;
+}
+
+.contact .name
+{
+    height: 2rem;
+}
+
+.contact .email
+{
+    height: 2rem;
+}
+
+.contact .message
+{
+    grid-column: 1 / span 2;
+}
+
+.contact .submit
+{
+    color: white;
+    background-color: $colorBlue;
+
+    font-size: 1.5rem;
+
+    display: block;
+    margin: auto;
+    padding: .5rem 3rem;
+
+    grid-column: 1 / span 2;
+}
+
+.contact .submit:hover
+{
+    color: $colorYellow;
 }

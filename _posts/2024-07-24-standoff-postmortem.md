@@ -35,7 +35,7 @@ Well, turns out the FMOD GDExtension didn't work out because... Android doesn't 
 
 *Lastly,* I generated all my builds on a computer. (Godot calls this Exporting.) The Android editor doesn't have the capability to run the Export commands. That doesn't sound unreasonable, as generating binaries requires quite a bit of platform-specific code. Save for mobile, it seems best to actually export from the desired platform.
 
-![The characters do the whole Good, Bad, and the Ugly close-up eye shot thing.]({{ "/assets/resources/posts/standoff/CinematicIntro.gif" | relative_url }})
+![The characters do the whole Good, Bad, and the Ugly close-up eye shot thing.]({{ "/assets/resources/posts/standoff/CinematicIntro.gif" | relative_url }}){:class="centered"}
 
 ## What I Learned
 1. ### How to use the Godot editor!
@@ -55,14 +55,14 @@ The game didn't require a plethora of features in order to get working. Deal car
 1. ### Legibility!
     I used UI to do a lot of the card and button work, but that bit me a little bit when I wanted to implement animations and effects to make the game clearer to understand. I ran out of time for multiple reasons, but in the end I just have cards flying to the left or right of the screen when it would have been much clearer to create a 3D instance that flies to the actual player.
 
-    ![Player chooses whether cards are given to the player on the left or right.]({{ "/assets/resources/posts/standoff/DealCards.gif" | relative_url }})
+    ![Player chooses whether cards are given to the player on the left or right.]({{ "/assets/resources/posts/standoff/DealCards.gif" | relative_url }}){:class="centered"}
 
     I was also stubborn and stuck on this over the shoulder view, so getting the camera angles good for all players took a lot of time. Time that would have been better used if I had just done a top down view to start and been willing to show the flow of the cards more easily that way. I'm happy with the cinematic quality it has, but it was slightly at the cost of clarity.
 
 2. ### Stick To a Theme
     This one was just a mismatch between what I had in my head and what I had on my computer. When I started developing the idea I was intent on a wacky mashup of wizards, knights, guns, and others. I drew all of the card art on my phone during the intermission of Disney on Ice. I avoided guns because I thought of swords and shields when I made the deck of cards prototype.
     
-    ![Players use cards to attack each other, although animations are sync'd up to the UI, it's still cowboys using cards with goofy swords on them.]({{ "/assets/resources/posts/standoff/CowboysUsingSwords.gif" | relative_url }})
+    ![Players use cards to attack each other, although animations are sync'd up to the UI, it's still cowboys using cards with goofy swords on them.]({{ "/assets/resources/posts/standoff/CowboysUsingSwords.gif" | relative_url }}){:class="centered"}
 
     The first pack I had on my machine was an old Synty Western pack. Then I got a fun idea to use the 'The Good, The Bad, and the Ugly' shots of the eyes to start each game to sell that distrust element. From there, I felt like I really went full on Serious Western with the vibe while UI has this sketchy fun feel to it. I should have either added more over-the-top models, injected some humor, or just re-did the cards to be a gunslingin' theme instead.
 

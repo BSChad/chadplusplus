@@ -74,5 +74,36 @@ layout: default
 </div>
 <div class="section section-contact" id="section-contact">
 	<h1><span>Contact</span></h1>
-	Find me!
+	<form method="POST" accept-charset="UTF-8" id="form" class="contact">
+	    <input type="text" class="name" name="name" placeholder="Name">
+	    <input type="email" class="email" name="email" placeholder="Email">
+	    <textarea rows="5" class="message" name="message" placeholder="Your message here."></textarea>
+	    <!-- add hidden Honeypot input to prevent spams -->
+	    <input type="hidden" name="_gotcha" style="display:none !important">
+	    <button class="submit" type="submit">Fire away!</button>
+	</form>
+	<p id="thanks" style="display: none;">Thank you for reaching out.</p>
+	<script>
+	    const form = document.getElementById("form");
+	    const thanks = document.getElementById("thanks");
+	    form.addEventListener("submit", formSubmit);
+
+	    function formSubmit(e) {
+	        e.preventDefault();
+	        const formData = new FormData(e.target);
+
+	        fetch("https://getform.io/f/aqokqxra", {
+	            method: "POST",
+	            body: formData,
+	            headers: {
+	                "Accept": "application/json",
+	            },
+	        })
+	        .then(response => {
+	        	form.style.display = "none";
+	        	thanks.style.display = "block";
+	    		})
+	        .catch(error => console.log(error))
+	    }
+	</script>
 </div>

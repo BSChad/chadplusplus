@@ -2,7 +2,7 @@
 layout: post
 title:  "I Made a Game on My Phone!"
 date:   2023-10-24 09:22:03 -0500
-categories: talk
+categories: talk lightning
 banner: assets/resources/posts/phone-game/slideshow-title.png
 excerpt: Over the past year I have been participating in a cool little initiative called Tiny Mass Games. Every 2 - 3 months we try to develop and launch new games. The stars aligned for the second season and I tried something insane. Make a game on my phone.
 ---
