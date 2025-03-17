@@ -21,6 +21,10 @@ legal: "© Chad Stewart, all rights reserved."
 
 # Build settings
 markdown: kramdown
+kramdown:
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    css_class: 'highlight'
 theme: minima
 plugins:
   - jekyll-feed
